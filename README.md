@@ -1,0 +1,3 @@
+"# BentoML-iris" 
+
+BentoML is an open-source framework that helps build, package, and deploy machine learning models as production-ready APIs. It works by taking a trained model, creating an inference service, packaging the model and dependencies into a Bento, and then deploying it using Docker, Kubernetes, or cloud platforms. Its main advantages are simple deployment, framework flexibility, reproducibility, scalability, containerization, and production-ready model serving.
