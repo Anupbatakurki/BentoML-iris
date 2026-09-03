@@ -1,0 +1,12 @@
+
+service: "service:IrisClassifier"
+
+include:
+  - "service.py"
+
+python:
+  packages:
+    - "bentoml"
+    - "scikit-learn"
+    - "numpy"
+

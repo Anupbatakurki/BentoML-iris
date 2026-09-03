@@ -1,0 +1,4 @@
+bentoml
+scikit-learn
+numpy
+bentoml==1.4.39

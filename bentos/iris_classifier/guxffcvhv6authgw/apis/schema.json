@@ -1,0 +1,48 @@
+{
+  "name": "IrisClassifier",
+  "type": "service",
+  "routes": [
+    {
+      "name": "predict",
+      "route": "/predict",
+      "batchable": false,
+      "input": {
+        "properties": {
+          "sepal_length": {
+            "title": "Sepal Length",
+            "type": "number"
+          },
+          "sepal_width": {
+            "title": "Sepal Width",
+            "type": "number"
+          },
+          "petal_length": {
+            "title": "Petal Length",
+            "type": "number"
+          },
+          "petal_width": {
+            "title": "Petal Width",
+            "type": "number"
+          }
+        },
+        "required": [
+          "sepal_length",
+          "sepal_width",
+          "petal_length",
+          "petal_width"
+        ],
+        "title": "Input",
+        "type": "object"
+      },
+      "output": {
+        "type": "integer"
+      },
+      "is_task": false
+    }
+  ],
+  "paths": {
+    "/predict": {
+      "mounted": false
+    }
+  }
+}
